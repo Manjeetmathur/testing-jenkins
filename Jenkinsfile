@@ -46,17 +46,6 @@ pipeline {
             }
         }
 
-        stage("send email notification"){
-            echo "email is getting send"
-
-            steps {
-                emailtext(
-                    subject: "Nest js app deployed successfully"
-                    body: "Your nest js app deployed"
-                    to: "${EMAIL}"
-                )
-            }
-        }
 
     }
 }
